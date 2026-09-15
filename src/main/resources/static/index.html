@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tomato - Food Delivery Assistant</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="chat-container">
+
+    <div class="chat-header">
+        <div class="bot-icon">🍅</div>
+        <div>
+            <h2>Tomato</h2>
+            <span>Food Delivery Assistant</span>
+        </div>
+        <div class="online">●</div>
+    </div>
+
+    <div class="chat-messages" id="chatMessages">
+
+        <div class="message bot-message">
+            <div class="avatar">🍅</div>
+            <div class="message-content">
+                <div class="message-name">Tomato</div>
+                <div class="bubble">
+                    Hey! 👋 I'm Tomato.<br>
+                    How can I help you with your food order?
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="typing" id="typing">
+        Tomato is typing...
+    </div>
+
+    <div class="suggestions">
+        <button onclick="sendSuggestion('Show me popular food')">
+            🍕 Popular food
+        </button>
+
+        <button onclick="sendSuggestion('I want to order a pizza')">
+            🍕 Pizza
+        </button>
+
+        <button onclick="sendSuggestion('Help me track my order')">
+            📦 Track order
+        </button>
+
+        <button onclick="sendSuggestion('I have a complaint')">
+            ⚠️ Complaint
+        </button>
+    </div>
+
+    <div class="input-area">
+        <input
+                type="text"
+                id="messageInput"
+                placeholder="Ask Tomato anything..."
+                autocomplete="off"
+        >
+
+        <button id="sendButton" onclick="sendMessage()">
+            ➤
+        </button>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
